@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="height=device-height, initial-scale=1.0" />
+    <title>VPFW</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <h1>VPFW</h1>
+      </div>
+      <div class="main">
+        <div>
+          <label for="width">Width : </label>
+          <input type="number" id="width" placeholder="Enter width in inches" required/>
+        </div>
+        <div>
+          <label for="height">height : </label>
+          <input type="number" id="height" placeholder="Enter height in inches" required />
+        </div>
+        <div>
+          <label for="box">Box width : </label>
+          <input type="number" id="box" placeholder="Enter box in inches"  required/>
+        </div>
+
+        <div  class="track">
+          <input type="checkbox" name="Track" class="checkbox" id="track" required/>
+          <label for="track">Track</label>
+        </div>
+        <input type="button" onclick="answer()" value="Submit">
+        <div class="result">
+            <h1 id="result"></h1>
+          </div>
+      </div>
+
+      
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
